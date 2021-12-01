@@ -22,5 +22,6 @@ class MessageDao {
     collection.get().then((QuerySnapshot snapshot) {
       snapshot.docs.forEach((f) => f.reference.delete());
     });
+    print('deleted');
   }
 }
